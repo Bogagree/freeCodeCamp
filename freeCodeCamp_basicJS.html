@@ -70,52 +70,91 @@
 <script>
     var lessonNumberN46;
 
-   // Declare the myGlobal variable below this line
-const myGlobal = 10;
+    // Declare the myGlobal variable below this line
+    const myGlobal = 10;
 
-function fun1() {
-  // Assign 5 to oopsGlobal Here
-oopsGlobal = 5;
-}
+    function fun1() {
+        // Assign 5 to oopsGlobal Here
+        oopsGlobal = 5;
+    }
 
-// Only change code above this line
+    // Only change code above this line
 
-function fun2() {
-  var output = "";
-  if (typeof myGlobal != "undefined") {
-    output += "myGlobal: " + myGlobal;
-  }
-  if (typeof oopsGlobal != "undefined") {
-    output += " oopsGlobal: " + oopsGlobal;
-  }
-  console.log(output);
-}
+    function fun2() {
+        var output = "";
+        if (typeof myGlobal != "undefined") {
+            output += "myGlobal: " + myGlobal;
+        }
+        if (typeof oopsGlobal != "undefined") {
+            output += " oopsGlobal: " + oopsGlobal;
+        }
+        console.log(output);
+    }
 </script>
 
 <script>
     const outerWear = "T-Shirt";
 
-function myOutfit() {
-  // Only change code below this line
-var outerWear = 'sweater';
-  // Only change code above this line
-  return outerWear;
-}
-console.log(outerWear);
+    function myOutfit() {
+        // Only change code below this line
+        var outerWear = 'sweater';
+        // Only change code above this line
+        return outerWear;
+    }
+    console.log(outerWear);
 
-myOutfit();
+    myOutfit();
 
-console.log(outerWear);
+    console.log(outerWear);
 </script>
 
 
 <script>
     var lessonN70;
-    
- function myFun() {
-  console.log("Hello");
-  return "World";
-  console.log("byebye")
-}
-myFun();
+
+    function myFun() {
+        console.log("Hello");
+        return "World";
+        console.log("byebye")
+    }
+    myFun();
+</script>
+
+<script>
+    var LessonN73
+
+    let count = 0;
+
+    function cc(card) {
+        switch (card) {
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+                count++;
+                break;
+            case 10:
+            case "J":
+            case "Q":
+            case "K":
+            case "A":
+                count--;
+        }
+
+        var holdbet = "Hold"
+
+        if (count > 0) {
+            holdbet = "Bet"
+        }
+        console.log(holdbet);
+        return count + " " + holdbet;
+    }
+
+    cc(2); cc(3); cc('K'); cc('K'); cc('A');
+
+console.log(count);
+
+
+
 </script>
