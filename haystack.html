@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>haystack</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    function findNeedle(haystack) {
+        // your code here
+        var position = 0;
+        for (var index = 0; index < haystack.length; index++) {
+            if (haystack[index] === "needle") {
+                position = index + 1;
+                console.log("found the needle at position " + position)
+                return position
+                
+            }
+        }
+    };
+
+    var haystack_1 = ['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false];
+
+    findNeedle(haystack_1);
+
+</script>
