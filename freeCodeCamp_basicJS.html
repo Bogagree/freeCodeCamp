@@ -153,8 +153,33 @@
 
     cc(2); cc(3); cc('K'); cc('K'); cc('A');
 
-console.log(count);
+    console.log(count);
 
+</script>
+
+<script>
+    var LessonN81 = 'Поиск в объекте по property'
+    // obj - объект с n-элементами,
+    // checkProp - проверяемое property (какая-то строка)
+
+   var obj = 
+    {gift: "pony", 
+    pet:  "kitten", 
+    bed: "sleigh"};
+
+    checkProp = "house";
+
+    function checkObj(obj, checkProp) {
+        
+        if (obj.hasOwnProperty(checkProp)) {
+            return obj[checkProp];
+            
+        } else { return "Not Found"; }
+
+        
+
+
+    }
 
 
 </script>
