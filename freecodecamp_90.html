@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Lesson N90</li>
+        <li>Рекурсия. Вывод суммы элементов массива через рекурсию</li>
+    </ul>
+    
+</body>
+</html>
+
+<script>
+  
+
+        function sum(arr, n) {
+            // Only change code below this line
+            if (n <= 0) {
+                return 0;
+            } else {
+                return sum(arr, n - 1) + arr[n - 1];
+            }
+        };
+    
+      sum([2, 3, 4, 5], 3); // should equal 9.
+
+    </script>
+
+
+lookUpProfile("Kristian", "lastName") should return the string Vos
+lookUpProfile("Sherlock", "likes") should return ["Intriguing Cases", "Violin"]
+lookUpProfile("Harry", "likes") should return an array
+lookUpProfile("Bob", "number") should return the string No such contact
+lookUpProfile("Bob", "potato") should return the string No such contact
+lookUpProfile("Akira", "address") should return the string No such property
