@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lesson N99</title>
 </head>
 <body>
     <ul>
-        <li>Lesson N98</li>
+        <li>Lesson N99</li>
         <li>Use Recursion to Create a Countdown - Применение рекурсии для вывода обратного отсчета
         </li>
     </ul>
@@ -17,6 +17,16 @@
 
 <script>
     function countdown(n) {
-        
-    }
+            if (n < 1) {
+                return [];
+            } else {
+                var array = countdown(n-1)
+                array.unshift(n)
+                console.log(array)
+                return array;
+            }
+        }
+    
+    countdown(10)
+
 </script>
